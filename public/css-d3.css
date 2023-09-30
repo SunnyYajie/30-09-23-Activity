@@ -173,23 +173,25 @@ ul li {
 
 /* GRID */
 section#grid-layout{
-    height: 100vh;
+    /* height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
 }
 .container {
     width: 50rem;
-    height: 25rem;
+    margin-top: 5rem;
+    height: 7rem;
     margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    border: 3px solid black;
+    gap: 10px;
     /* grid-template-rows: 2rem; */
 }
 .item-1{
+    padding-left: 10px;
     color: white;
     font-size: 40px;
     border: rgb(32, 88, 0) solid 20px;
@@ -198,6 +200,7 @@ section#grid-layout{
     grid-row: 1/4;
 }
 .item-2{
+    padding-left: 10px;
     color: white;
     font-size: 40px;
     border: rgb(32, 88, 0) solid 20px;
@@ -209,6 +212,7 @@ section#grid-layout{
     height: 25rem; */
 }
 .item-3{
+    padding-left: 10px;
     color: white;
     font-size: 40px;
     border: rgb(151, 39, 92) solid 20px;
@@ -217,6 +221,7 @@ section#grid-layout{
     grid-row: 1/1;
 }
 .item-4{
+    padding-left: 10px;
     color: white;
     font-size: 40px;
     border: rgb(122, 83, 11) solid 20px;
@@ -225,6 +230,7 @@ section#grid-layout{
     grid-row: 2/2;
 }
 .item-5{
+    padding-left: 10px;
     color: white;
     font-size: 40px;
     border: rgb(151, 39, 92) solid 20px;
@@ -233,6 +239,7 @@ section#grid-layout{
     grid-row: 2/2;
 }
 .item-6{
+    padding-left: 10px;
     color: white;
     font-size: 40px;
     border: rgb(32, 88, 0) solid 20px;
@@ -241,16 +248,74 @@ section#grid-layout{
     grid-row: 2/4;
 }
 .item-7{
+    padding-left: 10px;
     color: white;
     font-size: 40px;
     border: rgb(151, 39, 92) solid 20px;
     background-color: rgb(211, 64, 89);
 }
 .item-8{
+    padding-left: 10px;
     color: white;
     font-size: 40px;
     border: rgb(122, 83, 11) solid 20px;
     background-color: orange;
+}
+section#advanced-grid-layout{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1{
+    width: 50rem;
+    height: 25rem;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "a1 a1 a1 a1 a1"
+    "a2 a3 a3 a3 a4"
+    "a2 a3 a3 a3 a4"
+    "a2 a3 a3 a3 a4"
+    "a5 a5 a5 a5 a4";
+}
+.area-1{
+    text-align: center;
+    border-color: rgb(94, 93, 93);
+    grid-area: a1;
+    background-color: rgb(94, 93, 93);
+    border-radius: 1rem;
+}
+.area-2{
+    text-align: center;
+    border-color: rgb(145, 145, 145);
+    background-color: rgb(145, 145, 145);
+    grid-area: a2;
+    border-radius: 1rem;
+}
+.area-3{
+    text-align: center;
+    border-color: rgb(51, 51, 51);
+    background-color: rgb(51, 51, 51);
+    grid-area: a3;
+    
+}
+.area-4{
+    text-align: center;
+    border-color: rgb(145, 145, 145);
+    background-color: rgb(145, 145, 145);
+    grid-area: a4;
+    border-radius: 1rem;
+}
+.area-5{
+    text-align: center;
+    border-color: rgb(94, 93, 93);
+    background-color: rgb(94, 93, 93);
+    grid-area: a5;
+    border-radius: 1rem;
 }
 
 /* GRID ALIGN */
